@@ -1,19 +1,11 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
-import './index.css';
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { render } from 'react-dom';
+//import HelloReact from './HelloReact';
+//import NumberIncrementer from './NumberIncrementer';
+import AdderButton from './AdderButton';
 
-const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
-const rootElement = document.getElementById('root');
 
-ReactDOM.render(
-  <BrowserRouter basename={baseUrl}>
-    <App />
-  </BrowserRouter>,
-  rootElement);
+//render(<HelloReact name='Devora' />, document.getElementById('root'))
+//render(<NumberIncrementer />, document.getElementById('root'))
 
-registerServiceWorker();
+render(<AdderButton />, document.getElementById('root'))
