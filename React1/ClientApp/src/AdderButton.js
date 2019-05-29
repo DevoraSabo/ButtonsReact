@@ -31,12 +31,12 @@ class AdderButton extends React.Component {
         }
         return (
             <div className="well">
-                <h1 id="number" style="{randomColor}">{this.state.num}</h1>
+                <h1 id="number" style={randomColor}>{this.state.num}</h1>
                 <button onClick={this.onButtonClick} className="btn btn-warning">Click to Increment</button>
                 <br />
                 <h1 id="incrementer">{this.state.incrementer}</h1>
                 <button onClick={this.onIncrementerClick} className="btn btn-danger">Incrementing by this number</button>
-                <br />
+                <hr />
                 <button onClick={this.onColorChangerClick} className="btn btn-info">Random Color Changer</button>
             </div>
         );
